@@ -2,19 +2,23 @@
 <html>
 <head>
 <title>Travel Mexico</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,700,400italic,700italic|Damion' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
   <header class="main-header">
     <img src="public/images/logo.png" class="main-header__logo"/>
+    <a class="mobile-menu-toggle">Menu</a>
     <nav class="main-nav">
-      <a href="/" class="red">Destinations</a>
+      <a href="file:///Users/test/Projects/8thlight/destinations.html" class="red">Destinations</a>
       <a href="/" class="pink">Activities</a>
       <a href="/" class="yellow">Promotions</a>
       <a href="/" class="blue">Contact</a>
       <div class="green">
-        <input name="search" placeholder="Search"/> 
+        <label>
+           <input name="search" placeholder="Search"/> <img src="public/images/magglass.svg" class="mag-glass"> 
+        </label>
       </div>
     </nav>
   </header>
@@ -34,20 +38,26 @@
   <section class="main-section">
     <section class="trip-finder">
       <form class="trip-finder__form">
-        <select name="destination" class="trip-finder__select">
-          <option>Destination</option>
-          <option value="jl">Jalisco</option>
-        </select>
+        <div class="trip-finder__select-container">
+          <select name="destination" class="trip-finder__select">
+            <option>Destination</option>
+            <option value="jl">Jalisco</option>
+            <option value="jl">Jalisco</option>
+          </select>
+        </div>
 
-        <select name="activity" class="trip-finder__select">
-          <option>Activity</option>
-        </select>
+        <div class="trip-finder__select-container">
+          <select name="activity" class="trip-finder__select">
+            <option>Activity</option>
+          </select>
+        </div>
 
-        <select name="price" class="trip-finder__select">
-          <option>Price</option>
-        </select>
-        
-        <button class="trip-finder__button">Find Trips</button>
+        <div class="trip-finder__select-container">
+          <select name="price" class="trip-finder__select">
+            <option>Price</option>
+          </select>
+        </div>
+        <button class="trip-finder__button button">Find Trips</button>
       </form>
     </section>
 
@@ -67,25 +77,25 @@
         
         <div class="trip">
           <a href="/">
-            <img src="public/images/temple.jpg" class="trip__image">
+            <img src="public/images/Puerto-Vallarta-Lot-Puerto-Vallarta-real-estate7 (1).jpg" class="trip__image">
             <div class="trip__text">
-              Jalisco
+              Puerto Vallarta
             </div> 
           </a>
         </div>
         
         <div class="trip">
           <a href="/">
-            <img src="public/images/temple.jpg" class="trip__image">
+            <img src="public/images/12.jpg" class="trip__image">
             <div class="trip__text">
-              Jalisco
+              Guadalajara
             </div> 
           </a>
         </div>
       </div>
       
       <div class="featured-trips__actions">
-        <a href="/" class="button button--red">See All Destinations</a>
+        <a href="file:///Users/test/Projects/8thlight/destinations.html" class="button button--red">See All Destinations</a>
       </div>
     </section>
 
@@ -96,7 +106,7 @@
       <div class="trips">
         <div class="trip">
           <a href="/">
-            <img src="public/images/temple.jpg" class="trip__image">
+            <img src="public/images/scuba_mexico.jpg" class="trip__image">
             <div class="trip__text">
               Scuba Diving
             </div> 
@@ -105,7 +115,7 @@
         
         <div class="trip">
           <a href="/">
-            <img src="public/images/temple.jpg" class="trip__image">
+            <img src="public/images/zip_mexico.jpg" class="trip__image">
             <div class="trip__text">
               Zip Lining 
             </div> 
@@ -114,7 +124,7 @@
         
         <div class="trip">
           <a href="/">
-            <img src="public/images/temple.jpg" class="trip__image">
+            <img src="public/images/shopping_mexico.jpg" class="trip__image">
             <div class="trip__text">
               Shopping 
             </div> 
@@ -132,18 +142,24 @@
 
   <footer class="main-footer">
     <nav class="footer-nav">
-      <a href="/">Destinations</a>
+      <a href="file:///Users/test/Projects/8thlight/destinations.html">Destinations</a>
       <a href="">Activities</a>
       <a href="">Promotions</a>
       <a href="">Contact</a>
     </nav>
     <nav class="social-nav">
-      <a href="/"><img src="/"></a>
-      <a href="/"><img src="/"></a>
-      <a href="/"><img src="/"></a>
-      <a href="/"><img src="/"></a>
+      <a href="/"><img src="public/images/fb_logo.png"></a>
+      <a href="/"><img src="public/images/twitter_logo.png"></a>
+      <a href="/"><img src="public/images/Instagram_logo.png"></a>
+      </a>
     </nav>
   </footer>
+
+  <script>
+    document.querySelector('.mobile-menu-toggle').addEventListener('click', function (e) {
+      e.target.classList.toggle('active');
+    }, false)
+  </script>
 </body>
 
 </html>

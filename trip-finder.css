@@ -1,0 +1,42 @@
+.trip-finder__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -1rem;
+}
+
+.trip-finder__button {
+  margin: 0 1rem;
+  white-space: nowrap
+}
+
+.trip-finder__select-container {
+  position: relative;
+  min-width: 200px;
+  width: 100%;
+  margin: 0 1rem;
+}
+
+.trip-finder__select {
+  height: 3rem;
+  line-height: 3rem;
+  border: 1px solid #CCC;
+  padding: 0 1.5rem 0 1rem;
+  background-color: #FFF;
+  width: 100%;
+  border-radius: 0;
+}
+
+@media (max-width: 900px) {
+  .trip-finder__form {
+    display: block;
+    margin:0;
+    text-align: center;
+  }
+
+  .trip-finder__select-container {
+    margin: 0 auto 1rem;
+    max-width: 420px;
+  }
+
+}

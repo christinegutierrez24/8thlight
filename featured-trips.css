@@ -1,0 +1,66 @@
+.featured-trips__title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.featured-trips__actions {
+  text-align: center;
+  margin-top: 2rem; 
+
+}
+
+.trips {
+  display: flex;
+  margin: 0 -1rem;
+}
+
+.trip {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 0 1rem;
+  position: relative;
+}
+
+.trip a {
+  display: block;
+}
+
+.trip__image {
+  width: 100%;
+  display: block;
+}
+
+.trip__text {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 1.5rem; 
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.trip__text:hover {
+  background-color: rgba(0, 0, 0, 0.4);  
+}
+
+@media (max-width: 768px) {
+ 
+  .trips {
+    margin:0; 
+    display: block;
+  }
+
+  .trip {
+    margin: 0 auto 1rem;
+    max-width: 420px;
+  }
+
+}
+ 
